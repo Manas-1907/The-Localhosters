@@ -1,0 +1,242 @@
+<!DOCTYPE html><html lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Create your account | MAMA</title>
+<meta name="description" content="Create a free-to-start MAMA account to track your pregnancy, medicines and appointments and keep family in the loop.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://YOUR-DOMAIN.com/signup.html">
+<meta name="theme-color" content="#124C45">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MAMA">
+<meta property="og:title" content="Create your account | MAMA">
+<meta property="og:description" content="Create a free-to-start MAMA account to track your pregnancy, medicines and appointments and keep family in the loop.">
+<meta property="og:url" content="https://YOUR-DOMAIN.com/signup.html">
+<meta property="og:image" content="https://YOUR-DOMAIN.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MAMA logo: a mother holding her baby, with the text 'Calm, connected maternal care'">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Create your account | MAMA">
+<meta name="twitter:description" content="Create a free-to-start MAMA account to track your pregnancy, medicines and appointments and keep family in the loop.">
+<meta name="twitter:image" content="https://YOUR-DOMAIN.com/og-image.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+    }
+  </style>
+</head>
+<body class="bg-[#FAF8F7] text-[#29252B] antialiased min-h-screen flex flex-col justify-between py-10 px-4 selection:bg-[#F8E7EF] selection:text-[#29252B]">
+<div class="flex-1 flex items-center justify-center w-full">
+<div class="w-full max-w-[460px] bg-[#FFFFFF] rounded-2xl border border-[#EAE4E7] shadow-[0_4px_24px_rgba(41,37,43,0.03)] p-7 md:p-8">
+<!-- Logo Header -->
+<div class="flex flex-col items-center">
+<div class="flex items-center justify-center"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhF2EGJs0nGSwq8qllqDKzmsFCriMvx_bttxJrGbg07zlA2f9aeA_lvrnlDhSpZdL5TEYo1N3KbtxLD8oIMCLRm2BoRRfZx2GkrHaikJ55JKLljzEhc5DXm6il_sSP6-1iONXyQQLQno_Hix82JB4kdZJMr6oBQDhHr5kZAIctPlVuPZ7_VdACBY3C9Y6dqkYNHObDQS2XhoL8Nynud2oMJocMrcTHQOqmB-Q0tJWq8SHvcQOSAazZLn3OGFptUGzAICM" alt="MAMA logo: a mother cradling her baby" class="h-16 w-auto object-contain"></div>
+<h1 class="font-semibold tracking-tight text-2xl text-[#29252B] text-center mt-3">Create your account</h1>
+<p class="text-sm text-[#6F6870] text-center mt-1 mb-6">Personalized support for every stage of your maternal journey.</p>
+</div>
+<!-- Registration Form -->
+<form id="signupForm" class="space-y-4">
+<div id="signup-error" class="hidden text-xs text-red-600 bg-red-50 border border-red-200 rounded-lg p-3"></div>
+<!-- Full Name -->
+<div>
+<label class="block text-xs font-semibold text-[#29252B] mb-1.5" for="fullName">Full name</label>
+<input class="w-full h-11 px-3.5 rounded-xl border border-[#EAE4E7] bg-white text-[#29252B] text-sm placeholder:text-[#6F6870]/60 outline-none focus:border-[#124C45] focus:ring-1 focus:ring-[#124C45] transition-all" id="fullName" placeholder="e.g. Ananya Sharma" required="" type="text">
+</div>
+<!-- Email Address -->
+<div>
+<label class="block text-xs font-semibold text-[#29252B] mb-1.5" for="email">Email address</label>
+<input class="w-full h-11 px-3.5 rounded-xl border border-[#EAE4E7] bg-white text-[#29252B] text-sm placeholder:text-[#6F6870]/60 outline-none focus:border-[#124C45] focus:ring-1 focus:ring-[#124C45] transition-all" id="email" placeholder="name@example.com" required="" type="email">
+</div>
+<!-- Password -->
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<label class="block text-xs font-semibold text-[#29252B]" for="password">Password</label>
+<button class="text-xs font-medium text-[#6F6870] hover:text-[#29252B] transition-colors" id="toggle-btn" onclick="togglePassVisibility()" type="button">Show</button>
+</div>
+<div class="relative">
+<input class="w-full h-11 px-3.5 pr-10 rounded-xl border border-[#EAE4E7] bg-white text-[#29252B] text-sm placeholder:text-[#6F6870]/60 outline-none focus:border-[#124C45] focus:ring-1 focus:ring-[#124C45] transition-all" id="password" placeholder="At least 8 characters" required="" minlength="8" type="password">
+<span class="material-symbols-outlined absolute right-3.5 top-3 text-[#6F6870]/70 text-[18px] pointer-events-none">lock</span>
+</div>
+</div>
+<!-- Current Stage -->
+<div class="pt-0.5">
+<label class="block text-xs font-semibold text-[#29252B] mb-2">Current stage</label>
+<div class="flex flex-wrap gap-1.5" id="stage-chips">
+<button class="stage-chip text-xs font-medium px-3 py-1.5 rounded-full border border-[#EAE4E7] bg-white text-[#6F6870] hover:border-[#F2CADD] hover:text-[#29252B] transition-colors" onclick="selectStage(this)" type="button">
+              Trying to Conceive
+            </button>
+<button class="stage-chip text-xs font-medium px-3 py-1.5 rounded-full border border-[#EAE4E7] bg-white text-[#6F6870] hover:border-[#F2CADD] hover:text-[#29252B] transition-colors" onclick="selectStage(this)" type="button">
+              First Trimester
+            </button>
+<button class="stage-chip text-xs font-medium px-3 py-1.5 rounded-full border border-[#F2CADD] bg-[#F8E7EF] text-[#29252B] transition-colors" onclick="selectStage(this)" type="button">
+              Second Trimester
+            </button>
+<button class="stage-chip text-xs font-medium px-3 py-1.5 rounded-full border border-[#EAE4E7] bg-white text-[#6F6870] hover:border-[#F2CADD] hover:text-[#29252B] transition-colors" onclick="selectStage(this)" type="button">
+              Third Trimester
+            </button>
+<button class="stage-chip text-xs font-medium px-3 py-1.5 rounded-full border border-[#EAE4E7] bg-white text-[#6F6870] hover:border-[#F2CADD] hover:text-[#29252B] transition-colors" onclick="selectStage(this)" type="button">
+              Postpartum
+            </button>
+</div>
+</div>
+<!-- Estimated Due Date -->
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<label class="block text-xs font-semibold text-[#29252B]" for="dueDate">Estimated due date</label>
+<span class="text-xs text-[#6F6870]">(Optional)</span>
+</div>
+<input class="w-full h-11 px-3.5 rounded-xl border border-[#EAE4E7] bg-white text-[#29252B] text-sm outline-none focus:border-[#124C45] focus:ring-1 focus:ring-[#124C45] transition-all" id="dueDate" type="date">
+</div>
+<!-- Spam protection: hidden honeypot field. Humans never see it; bots fill it in. -->
+<div aria-hidden="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden"><label for="company_website">Leave this field empty</label><input id="company_website" name="company_website" type="text" tabindex="-1" autocomplete="off"></div>
+<!-- Terms Agreement Checkbox -->
+<div class="flex items-start gap-2.5 pt-1">
+<input class="mt-0.5 h-4 w-4 rounded border-[#EAE4E7] text-[#124C45] focus:ring-[#124C45] cursor-pointer" id="terms" required="" type="checkbox">
+<label class="text-xs text-[#6F6870] leading-snug cursor-pointer" for="terms">
+            I agree to the <a class="text-[#29252B] font-medium underline hover:text-[#124C45]" href="#">Terms of Service</a> and <a class="text-[#29252B] font-medium underline hover:text-[#124C45]" href="privacy.html">Privacy Policy</a>.
+          </label>
+</div>
+<!-- Create Account CTA Button -->
+<div class="pt-2">
+<button id="submitBtn" class="w-full h-12 bg-[#124C45] hover:bg-[#0E3B36] text-white font-medium text-sm rounded-xl transition-all shadow-sm flex items-center justify-center active:scale-[0.99]" type="submit">
+            Create account
+          </button>
+</div>
+</form>
+<!-- Divider -->
+<div class="relative flex py-4 items-center">
+<div class="flex-grow border-t border-[#EAE4E7]"></div>
+<span class="shrink-0 px-3 text-xs text-[#6F6870]">or continue with</span>
+<div class="flex-grow border-t border-[#EAE4E7]"></div>
+</div>
+<!-- Social SSO Buttons -->
+<div class="grid grid-cols-2 gap-2.5">
+<button class="h-10 px-3 rounded-xl border border-[#EAE4E7] hover:bg-[#FAF8F7] text-xs font-semibold text-[#29252B] transition-colors flex items-center justify-center gap-2" type="button">
+<svg class="w-4 h-4" viewBox="0 0 24 24">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"></path>
+</svg>
+<span class="">Google</span>
+</button>
+<button class="h-10 px-3 rounded-xl border border-[#EAE4E7] hover:bg-[#FAF8F7] text-xs font-semibold text-[#29252B] transition-colors flex items-center justify-center gap-2" type="button">
+<svg class="w-4 h-4 fill-[#29252B]" viewBox="0 0 24 24">
+<path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.63-.78 1.06-1.87.94-2.96-.91.04-2.02.61-2.67 1.38-.58.67-1.08 1.76-.94 2.83 1.02.08 2.05-.48 2.67-1.25z"></path>
+</svg>
+<span class="">Apple</span>
+</button>
+</div>
+<!-- Sign In Link -->
+<div class="mt-6 text-center">
+<p class="text-xs text-[#6F6870]">
+          Already have an account? 
+          <a class="font-semibold text-[#124C45] hover:underline ml-1" href="login.html">Sign in</a>
+</p>
+</div>
+</div>
+</div>
+<!-- Discreet Footer -->
+<footer class="w-full text-center mt-6">
+<p class="text-xs text-[#6F6870]/80">
+<a class="hover:text-[#29252B] transition-colors" href="privacy.html">Privacy Policy</a>
+<span class="mx-1.5">·</span>
+<a class="hover:text-[#29252B] transition-colors" href="index.html">Home</a>
+<span class="mx-1.5">·</span>
+<a class="hover:text-[#29252B] transition-colors" href="contact.html">Contact</a>
+<span class="mx-1.5">·</span>
+<a class="hover:text-[#29252B] transition-colors" href="#">Terms of Care</a>
+</p>
+</footer>
+<script>
+    function selectStage(button) {
+      const chips = document.querySelectorAll('.stage-chip');
+      chips.forEach(chip => {
+        chip.className = 'stage-chip text-xs font-medium px-3 py-1.5 rounded-full border border-[#EAE4E7] bg-white text-[#6F6870] hover:border-[#F2CADD] hover:text-[#29252B] transition-colors';
+      });
+      button.className = 'stage-chip text-xs font-medium px-3 py-1.5 rounded-full border border-[#F2CADD] bg-[#F8E7EF] text-[#29252B] transition-colors';
+    }
+
+    function togglePassVisibility() {
+      const pwdInput = document.getElementById('password');
+      const toggleBtn = document.getElementById('toggle-btn');
+      if (pwdInput.type === 'password') {
+        pwdInput.type = 'text';
+        toggleBtn.innerText = 'Hide';
+      } else {
+        pwdInput.type = 'password';
+        toggleBtn.innerText = 'Show';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('signupForm');
+      const errorDiv = document.getElementById('signup-error');
+      const submitBtn = document.getElementById('submitBtn');
+
+      if (form) {
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          errorDiv.classList.add('hidden');
+          errorDiv.textContent = '';
+
+          const name = document.getElementById('fullName').value.trim();
+          const email = document.getElementById('email').value.trim();
+          const password = document.getElementById('password').value;
+          const companyWebsite = document.getElementById('company_website')?.value || '';
+
+          if (!name) {
+            errorDiv.textContent = 'Please enter your full name.';
+            errorDiv.classList.remove('hidden');
+            return;
+          }
+          if (!email) {
+            errorDiv.textContent = 'Please enter a valid email address.';
+            errorDiv.classList.remove('hidden');
+            return;
+          }
+          if (!password || password.length < 8) {
+            errorDiv.textContent = 'Password must be at least 8 characters long.';
+            errorDiv.classList.remove('hidden');
+            return;
+          }
+
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Creating account...';
+
+          try {
+            if (window.MamaAPI && window.MamaAPI.auth) {
+              await window.MamaAPI.auth.register({ name, email, password, company_website: companyWebsite });
+            } else {
+              localStorage.setItem('userName', name);
+              localStorage.setItem('mama_user', JSON.stringify({ name, email }));
+            }
+            window.location.href = 'home.html';
+          } catch (err) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Create account';
+            errorDiv.textContent = err.message || 'Account creation failed. Please try again.';
+            errorDiv.classList.remove('hidden');
+          }
+        });
+      }
+    });
+  </script>
+<script type="module" src="assets/site.js"></script>
+<script type="module" src="assets/api.js"></script>
+<script type="module" src="assets/nav.js"></script>
+<script type="module" src="assets/app.js"></script></body></html>
+
+
+

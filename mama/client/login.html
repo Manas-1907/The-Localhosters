@@ -1,0 +1,222 @@
+<!DOCTYPE html><html lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Sign in | MAMA</title>
+<meta name="description" content="Sign in to MAMA to see your pregnancy journey, medicines, appointments and support circle.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://YOUR-DOMAIN.com/login.html">
+<meta name="theme-color" content="#124C45">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MAMA">
+<meta property="og:title" content="Sign in | MAMA">
+<meta property="og:description" content="Sign in to MAMA to see your pregnancy journey, medicines, appointments and support circle.">
+<meta property="og:url" content="https://YOUR-DOMAIN.com/login.html">
+<meta property="og:image" content="https://YOUR-DOMAIN.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MAMA logo: a mother holding her baby, with the text 'Calm, connected maternal care'">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sign in | MAMA">
+<meta name="twitter:description" content="Sign in to MAMA to see your pregnancy journey, medicines, appointments and support circle.">
+<meta name="twitter:image" content="https://YOUR-DOMAIN.com/og-image.png">
+
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            surface: '#FFFFFF',
+            canvas: '#FAF8F7',
+            charcoal: '#29252B',
+            muted: '#6F6870',
+            teal: {
+              DEFAULT: '#124C45',
+              hover: '#0e3e38',
+            },
+            softpink: {
+              light: '#F8E7EF',
+              DEFAULT: '#F2CADD',
+            },
+            borderNeutral: '#EAE4E7',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-canvas font-sans text-charcoal antialiased min-h-screen flex flex-col justify-between selection:bg-softpink selection:text-charcoal p-4 sm:p-6">
+<!-- Main centered container -->
+<main class="flex-1 flex flex-col items-center justify-center w-full">
+<div class="w-full max-w-[420px] bg-white rounded-2xl border border-borderNeutral p-7 sm:p-9 shadow-[0_4px_24px_rgba(41,37,43,0.03)] transition-all">
+<!-- Brand Logo Centered -->
+<div class="flex items-center justify-center gap-2 mb-2"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhF2EGJs0nGSwq8qllqDKzmsFCriMvx_bttxJrGbg07zlA2f9aeA_lvrnlDhSpZdL5TEYo1N3KbtxLD8oIMCLRm2BoRRfZx2GkrHaikJ55JKLljzEhc5DXm6il_sSP6-1iONXyQQLQno_Hix82JB4kdZJMr6oBQDhHr5kZAIctPlVuPZ7_VdACBY3C9Y6dqkYNHObDQS2XhoL8Nynud2oMJocMrcTHQOqmB-Q0tJWq8SHvcQOSAazZLn3OGFptUGzAICM" alt="MAMA logo: a mother cradling her baby" class="h-16 w-auto object-contain"></div>
+<!-- Heading & Subtitle -->
+<h1 class="text-2xl font-semibold tracking-tight text-charcoal text-center mt-3">
+        Welcome back
+      </h1>
+<p class="text-sm text-muted text-center mt-1 mb-6">
+        Your maternal-care journey, all in one place.
+      </p>
+<!-- Form -->
+<form id="loginForm" class="space-y-4">
+<div id="login-error" class="hidden text-xs text-red-600 bg-red-50 border border-red-200 rounded-lg p-3"></div>
+<!-- Email/Phone field -->
+<div>
+<label class="block text-xs font-semibold text-charcoal mb-1.5" for="identifier">
+            Email or phone number
+          </label>
+<input class="w-full px-3.5 py-2.5 rounded-xl border border-borderNeutral bg-white text-sm text-charcoal placeholder:text-muted/50 focus:border-softpink focus:outline-none focus:ring-2 focus:ring-softpink-light transition-all" id="identifier" name="identifier" placeholder="you@example.com or phone" required="" type="text">
+</div>
+<!-- Password field -->
+<div>
+<label class="block text-xs font-semibold text-charcoal mb-1.5" for="password">
+            Password
+          </label>
+<div class="relative">
+<input class="w-full pl-3.5 pr-10 py-2.5 rounded-xl border border-borderNeutral bg-white text-sm text-charcoal placeholder:text-muted/50 focus:border-softpink focus:outline-none focus:ring-2 focus:ring-softpink-light transition-all" id="password" name="password" placeholder="••••••••" required="" type="password">
+<button aria-label="Toggle password visibility" class="absolute right-3 top-1/2 -translate-y-1/2 text-muted hover:text-charcoal p-0.5 flex items-center justify-center transition-colors" onclick="togglePassword()" type="button">
+<span class="material-symbols-outlined text-[19px]" id="toggleIcon">visibility</span>
+</button>
+</div>
+</div>
+<!-- Remember Me & Forgot Password -->
+<div class="flex items-center justify-between pt-0.5 text-xs">
+<label class="flex items-center gap-2 cursor-pointer select-none">
+<input class="w-4 h-4 rounded border-borderNeutral text-teal focus:ring-softpink-light accent-teal cursor-pointer" id="remember" name="remember" type="checkbox">
+<span class="text-muted">Remember me</span>
+</label>
+<a class="text-muted hover:text-charcoal transition-colors underline-offset-2 hover:underline" href="#">
+            Forgot password?
+          </a>
+</div>
+<!-- Primary Action -->
+<button id="loginSubmitBtn" class="w-full mt-2 py-3 px-4 rounded-xl bg-teal text-white font-medium text-sm hover:opacity-95 active:scale-[0.99] transition-all shadow-sm flex items-center justify-center gap-2" type="submit">
+          Sign in
+        </button>
+</form>
+<!-- Subtle Divider -->
+<div class="relative my-6 flex items-center justify-center">
+<div class="w-full border-t border-borderNeutral"></div>
+<span class="absolute bg-white px-3 text-xs text-muted">
+          or continue with
+        </span>
+</div>
+<!-- Social SSO Buttons -->
+<div class="grid grid-cols-2 gap-2.5">
+<button class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl border border-borderNeutral bg-white hover:bg-canvas text-xs font-medium text-charcoal transition-all active:scale-[0.99]" type="button">
+<svg class="w-4 h-4" viewBox="0 0 24 24">
+<path d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.66v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.15z" fill="#4285F4"></path>
+<path d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.35 24 12 24z" fill="#34A853"></path>
+<path d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.97 0 12s.45 3.82 1.25 5.42l4.03-3.15z" fill="#FBBC05"></path>
+<path d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.35 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z" fill="#EA4335"></path>
+</svg>
+<span class="">Google</span>
+</button>
+<button class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl border border-borderNeutral bg-white hover:bg-canvas text-xs font-medium text-charcoal transition-all active:scale-[0.99]" type="button">
+<svg class="w-4 h-4 fill-current text-charcoal" viewBox="0 0 24 24">
+<path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.84c.66-.8 1.11-1.92.99-3.04-.96.04-2.12.64-2.8 1.44-.6.69-1.12 1.83-.98 2.92 1.07.08 2.14-.53 2.79-1.32z"></path>
+</svg>
+<span class="">Apple</span>
+</button>
+</div>
+<!-- Bottom Register Prompt -->
+<p class="text-center text-xs text-muted mt-6">
+        New to MAMA?
+        <a class="font-medium text-teal hover:underline underline-offset-4 ml-1" href="signup.html">
+          Create an account
+        </a>
+</p>
+</div>
+</main>
+<!-- Discreet Footer Links -->
+<footer class="py-4 text-center">
+<div class="inline-flex items-center gap-2 text-xs text-muted/80">
+<a class="hover:text-charcoal transition-colors" href="privacy.html">Privacy Policy</a>
+<span class="">·</span>
+<a class="hover:text-charcoal transition-colors" href="index.html">Home</a>
+<span class="">·</span>
+<a class="hover:text-charcoal transition-colors" href="contact.html">Contact</a>
+<span class="">·</span>
+<a class="hover:text-charcoal transition-colors" href="#">Terms of Care</a>
+</div>
+</footer>
+<script>
+    function togglePassword() {
+      const input = document.getElementById('password');
+      const icon = document.getElementById('toggleIcon');
+      if (!input || !icon) return;
+
+      if (input.type === 'password') {
+        input.type = 'text';
+        icon.textContent = 'visibility_off';
+      } else {
+        input.type = 'password';
+        icon.textContent = 'visibility';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('loginForm');
+      const errorDiv = document.getElementById('login-error');
+      const submitBtn = document.getElementById('loginSubmitBtn');
+
+      if (form) {
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          errorDiv.classList.add('hidden');
+          errorDiv.textContent = '';
+
+          const email = document.getElementById('identifier').value.trim();
+          const password = document.getElementById('password').value;
+
+          if (!email) {
+            errorDiv.textContent = 'Please enter your email or phone number.';
+            errorDiv.classList.remove('hidden');
+            return;
+          }
+          if (!password) {
+            errorDiv.textContent = 'Please enter your password.';
+            errorDiv.classList.remove('hidden');
+            return;
+          }
+
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Signing in...';
+
+          try {
+            if (window.MamaAPI && window.MamaAPI.auth) {
+              await window.MamaAPI.auth.login(email, password);
+            } else {
+              localStorage.setItem('mama_user', JSON.stringify({ email }));
+            }
+            window.location.href = 'home.html';
+          } catch (err) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Sign in';
+            errorDiv.textContent = err.message || 'Sign in failed. Please check your credentials.';
+            errorDiv.classList.remove('hidden');
+          }
+        });
+      }
+    });
+  </script>
+
+
+<script type="module" src="assets/site.js"></script>
+<script type="module" src="assets/api.js"></script>
+<script type="module" src="assets/nav.js"></script>
+<script type="module" src="assets/app.js"></script></body></html>
+
+
+
